@@ -1,13 +1,87 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --box-size: 40px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  margin: 10px 10px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.dropdown-form {
+  margin-top: 20px;
+  margin-left: 100px;
+}
+.button {
+  border-radius: 5%;
+  border: none;
+  background-color: #0075d8;
+  color: white;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  margin: 5px;
+}
+
+.dropdown {
+  padding: 5px 10px;
+  margin: 5px;
+  width: 150px;
+}
+
+.dropdown:hover {
+  cursor: pointer;
+}
+
+.board {
+  display: grid;
+  gap: 0;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.square {
+  width: var(--box-size);
+  height: var(--box-size);
+  border: 1px solid black;
+  background-color: white;
+}
+
+.square:hover {
+  cursor: pointer;
+}
+
+.square-blue {
+  width: var(--box-size);
+  height: var(--box-size);
+  border: 1px solid black;
+  background-color: #03a8f4;
+}
+
+.square-blue:hover {
+  cursor: pointer;
+}
+
+.print-squares {
+  background-color: #fbf8e3;
+  padding: 10px;
+  margin: 5px auto;
+  color: #998052;
+  border-radius: 5%;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.print-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  font-family: sans-serif;
 }
